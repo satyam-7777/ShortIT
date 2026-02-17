@@ -15,7 +15,7 @@ exports.isAlreadyShortened = async (req, res, next) => {
     console.log(shortenData);
     if (shortenData) {
       const responseData = {
-        shortUrl: `${process.env.BASE_URL}/${shortenData.code}`,
+        shortUrl: `${req.protocol}://${req.get("host")}/${shortenData.code}`,
       };
       return responseHandler.sendSuccessResponseHandler(res, 200, responseData);
     }
@@ -39,7 +39,7 @@ exports.getAndShortUrl = async (req, res, next) => {
     await shortUrlModel.create(dbObject);
 
     const responseData = {
-      shortUrl: `${process.env.BASE_URL}/${code}`,
+      shortUrl: `${req.protocol}://${req.get("host")}/${code}`,
     };
 
     responseHandler.sendSuccessResponseHandler(res, 201, responseData);
