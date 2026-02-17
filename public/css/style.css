@@ -1,0 +1,132 @@
+/* Full page center */
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #a13bac, #417bb5);
+}
+
+/* Main card */
+.container {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  padding: 46px;
+  border-radius: 22px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Header */
+h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-bottom: 28px;
+}
+
+/* Input group */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+/* Better input */
+input {
+  flex: 1;
+  padding: 14px 16px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* Buttons */
+button {
+  padding: 14px 18px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: none;
+  background: #4f46e5;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #4338ca;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Secondary button */
+button.secondary {
+  background: #8d8c91;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+button.secondary:hover {
+  background: #d1d5db;
+}
+
+/* Result box */
+.result {
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+}
+
+.result .label {
+  display: block;
+  font-size: 12px;
+  color: #065f46;
+  margin-bottom: 6px;
+}
+
+.result a {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 10px;
+  word-break: break-all;
+}
+
+/* Messages */
+.error {
+  color: #dc2626;
+  margin-bottom: 10px;
+}
+
+.loading {
+  color: #4f46e5;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Footer */
+footer {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #9ca3af;
+}

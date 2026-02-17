@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ShortIT</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="container">
+        <header>
+          <h1>ShortIT</h1>
+          <p class="subtitle">Shorten long URLs into clean, shareable links</p>
+        </header>
+
+        <main>
+          <div class="input-group">
+            <input
+              id="urlInput"
+              type="url"
+              placeholder="Paste your long URL here…"
+              autocomplete="off"
+            />
+            <button id="shortenBtn" disabled>Short-IT</button>
+          </div>
+
+          <button id="resetBtn" class="secondary">Reset</button>
+
+          <p id="error" class="error"></p>
+          <p id="loading" class="loading hidden">Shortening…</p>
+
+          <div id="result" class="result hidden">
+            <span class="label">Short URL</span>
+            <a id="shortUrl" target="_blank"></a>
+            <button id="copyBtn">Copy</button>
+          </div>
+        </main>
+
+        <footer>
+          <p>Built by Satyam</p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
