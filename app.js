@@ -25,4 +25,5 @@ app.use(validationController.invalidPathHandler);
 // error handling middleware
 app.use(responseHandler.globalErrorHandler);
 
+// exporting the app
 module.exports = app;
